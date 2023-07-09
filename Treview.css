@@ -1,0 +1,67 @@
+body { background-color:  rgb(9,13,18);
+color:white;
+}
+
+.{ 
+  
+background-color:  rgb(9,13,18);
+  height: 5000px;
+  font-family: "Times New Roman", Arial, Sans-Serif;
+}
+
+#index{
+  color: lightBlue;
+  font-weight:bold;
+}
+
+#top-bar {
+  color:white;
+  width:150px;
+  margin-top:50px;
+  display: flex;
+  flex-direction:column;
+}
+
+#nameInput {
+  color: white;
+}
+#reviewInput {
+  color: white;
+}
+#bt {
+  
+  margin-top:10px;
+  border: none;
+  color:white;
+  background-color:RGB(19,36,61);
+}
+
+
+#stick{ 
+  margin-top: 20px;
+  font-size: 12px;
+  text-align:center;
+}
+
+#commentSection{
+  display:grid;
+  grid-template-columns: 1fr ;
+  row-gap:15px;
+}
+
+#userFrame{
+  padding-top:10px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color:RGB(19,36,61);
+  border-radius: 10px;
+  
+  
+}
+
+#userComment {
+  
+  margin-top:-1px;
+ 
+}

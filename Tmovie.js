@@ -13,14 +13,19 @@ let generalLink = 'https://api.themoviedb.org/3/search/movie?&api_key=5aafdc3157
 
 let userCommand= document.getElementById("bar");
 let sendForm = document.getElementById("form");
-
+ 
 function findMovie(link,option)  {
   fetch ( link , option)
   .then(response =>  response.json())
   .then(data => { 
-    for(i=1; i < data.results.length;i++)
+    for(let i=1; i < data.results.length;i++)
     { const title = data.results[i].title;
       const posterLink = data.results[i].poster_path;
+      const movieId = data.results[i].id;
+      
+      
+      
+     
       
       const  newDiv = document
       .createElement('div');
@@ -28,36 +33,47 @@ function findMovie(link,option)  {
       .createElement('img');
       const  newP = document
       .createElement('p');
+      const newA = document.createElement('a');
       
       newDiv.setAttribute('id','frame');
       newImg.setAttribute('id','img');
       newP.setAttribute('id','name');
+      newA.setAttribute('id','review')
+      newA.setAttribute('class',`${movieId}`)
+      newA.setAttribute('href',`Treview.html?movieId=${movieId}`)
+      newA.setAttribute('onclick','nextPage')
       
       newP.innerHTML = title;
       newImg.src = imgRoot + posterLink;
+      newA.innerHTML = "review";
+      
+      
       
       newDiv.appendChild(newImg);
       newDiv.appendChild(newP);
+      newDiv.appendChild(newA)
       document.getElementById('poster-frame').appendChild(newDiv);
       
     
     } })
   
   .catch(err => console.error(err)); };
-   findMovie(sampleLink, options);
+    findMovie(sampleLink, options);
  //  findMovie(generalLink + "dream", options);
 
   
-sendForm.addEventListener("submit",(ev) =>{
+sendForm.addEventListener("submit", (ev) =>{
   ev.preventDefault();
-  document.getElementById("poster-frame").innerHTML= "";
+   document.getElementById("poster-frame").innerHTML= "";
   findMovie(generalLink + userCommand.value, options);
   console.log(userCommand.value);
   sendForm.reset();
   
+  
 });
   
-   
+  
+  
   
   
   
