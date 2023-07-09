@@ -2,7 +2,7 @@ const options = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1YWFmZGMzMTU3MWUzMjRjZmRhZDFiODM3OTJjZTUxNyIsInN1YiI6IjY0OGFmM2U2MjYzNDYyMDBjYTE4YTE4NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.BcmR0tJXA74WrxFxwIrMz08sWDFesEl3rxRYYtTq9FU'
+    Authorization: 'BearereyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1YWFmZGMzMTU3MWUzMjRjZmRhZDFiODM3OTJjZTUxNyIsInN1YiI6IjY0OGFmM2U2MjYzNDYyMDBjYTE4YTE4NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.BcmR0tJXA74WrxFxwIrMz08sWDFesEl3rxRYYtTq9FU'
   } } ;
   
 let  sampleLink = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=5aafdc31571e324cfdad1b83792ce517&page=1';
