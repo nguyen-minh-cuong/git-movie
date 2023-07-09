@@ -47,19 +47,21 @@
   
 }
 
-#img {
-  
-  height: 150px;
-  width: 100px;
-  border-radius: 15px;
-}
-
 #frame {
   width: 100px;
   padding: 10px ;
   background-color:RGB(19,36,61);
   display: flex;
   flex-direction: column;
+  border-radius: 15px;
+ justify-content: space-between;
+
+}
+
+#img {
+  
+  height: 150px;
+  width: 100px;
   border-radius: 15px;
 }
 
@@ -69,7 +71,7 @@
   text-align: center;
 }
 #review{
-   color: lightblue;
+  color: lightblue;
   font-weight: bold;
   text-align:center;
 }

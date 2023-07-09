@@ -29,11 +29,14 @@ background-color:  rgb(9,13,18);
   color: white;
 }
 #bt {
-  
+  flex: 20px;
   margin-top:10px;
   border: none;
+  border-radius:16px;
   color:white;
   background-color:RGB(19,36,61);
+  margin-left:15px;
+  margin-right:15px;
 }
 
 
